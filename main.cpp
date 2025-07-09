@@ -9,7 +9,7 @@ int main(int argc, char *argv[])
     qmlRegisterType<Calculator> ("Calculator", 1, 0, "Calculator");
 
     QQmlApplicationEngine engine;
-    const QUrl url(QUrl::fromLocalFile("/Users/shawama_supreme/Desktop/QMLCalculator/main.qml"));
+    const QUrl url(QStringLiteral("qrc:/src/main.qml"));
     QObject::connect(&engine, &QQmlApplicationEngine::objectCreated,
                      &app, [url](QObject *obj, const QUrl &objUrl) {
                         if (!obj && url == objUrl)

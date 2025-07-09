@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/src">
+        <file>images/active.png</file>
+        <file>images/bkt.png</file>
+        <file>images/division.png</file>
+        <file>images/equal.png</file>
+        <file>images/minus.png</file>
+        <file>images/multiplication.png</file>
+        <file>images/normal.png</file>
+        <file>images/percent.png</file>
+        <file>images/plus_minus.png</file>
+        <file>images/plus.png</file>
+        <file>fonts/Open_Sans_Semibold.ttf</file>
+        <file>main.qml</file>
+    </qresource>
+</RCC>

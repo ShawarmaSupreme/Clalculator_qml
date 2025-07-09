@@ -36,6 +36,8 @@ qt_add_qml_module(appQMLCalculator
         images/normal.png
     SOURCES
         Calculator.h
+        RESOURCES resources.qrc
+        #RESOURCES main.qrc
 )
 
 set_target_properties(appQMLCalculator PROPERTIES
@@ -55,3 +57,6 @@ install(TARGETS appQMLCalculator
     LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
+
+qt_add_resources(PROJECT_RESOURCES "resources.qrc")
+target_sources(appQMLCalculator PRIVATE ${PROJECT_RESOURCES})

@@ -160,7 +160,10 @@ Window {
             anchors.bottom: parent.bottom
             anchors.bottomMargin: 10
             anchors.horizontalCenter: parent.horizontalCenter
-            onClicked: secretWindow.visible = false
+            onClicked: {
+                passwordInput.placeholderText = "";
+                secretWindow.visible = false
+            }
         }
     }
 
